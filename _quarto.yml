@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  title: 'Samuele Soraggi'
+  navbar:
+    #logo: /img/logo.png
+    left:
+      - href: whoami.qmd
+        text: 'whoami'
+      - href: man.qmd
+        text: man
+      - href: random.qmd
+        text: 'echo $RANDOM'
+      - href: wget.qmd
+        text: wget
+
+
+    right: 
+      - icon: github
+        href: https://github.com/SamueleSoraggi
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/samuelesoraggi/
+        aria-label: LinkedIn
+
+format:
+  html:
+    theme: 
+      light: [materia] #, css/materialight.scss]
+      dark: darkly
+    toc: true
+#    include-in-header:
+#      - file: "resources/bioschema.html"
